@@ -31,3 +31,17 @@ function squareAdd(arg) {
   let result = square(arg);
   return result + add(arg);
 }
+
+console.log("Hoisted: " + add(100, 200));
+function add(numOne, numTwo) {
+  return numOne + numTwo;
+}
+
+console.log("Assigned: " + add(32, 64));
+let addition = add;
+
+console.log("Anonymous: " + add(9, 1));
+let anon = function (numOne, numTwo) {
+  let result = numOne + numTwo;
+  return result;
+};
