@@ -45,3 +45,9 @@ let anon = function (numOne, numTwo) {
   let result = numOne + numTwo;
   return result;
 };
+
+function readName() {
+  let myName = "External Script";
+  console.log(myName);
+}
+readName();
